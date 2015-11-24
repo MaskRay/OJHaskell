@@ -1,0 +1,1 @@
+main = print $ sum [(a-1)`div`2*2*a | a <- [3..1000]]
