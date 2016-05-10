@@ -1,0 +1,16 @@
+main = putStrLn "around the world"
+--{-# LANGUAGE OverloadedStrings #-}
+--import Control.Monad.State
+--import Data.Char
+--import Data.List
+--import qualified Data.Map as M
+--import Data.Functor
+--import qualified Data.ByteString.Char8 as B
+--
+--main = do
+--  ws <- (B.words . B.map toLower . B.filter (liftM2 (||) isAlphaNum isSpace)) <$> B.getContents
+--  print ws
+--  let m = foldl' (\m x -> M.insertWith (+) x (1::Int) m) M.empty $ zip3 ws (tail ws) (tail $ tail ws)
+--  let ((x,y,z), c) = M.foldWithKey (\k v o -> if v >= snd o then (k,v) else o) (("","",""),0) m
+--  print c
+--  B.putStrLn $ B.concat [x, " ", y, " ", z]
